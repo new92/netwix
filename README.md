@@ -30,8 +30,7 @@ If you have any feedback, please reach out to us at <a href="mailto:new92github@
 
 **Feel free to contact us anytime ! You'll get a reply within a day. Please avoid using abusive or offensive language.
 If you are reporting a bug or making a suggestion please make sure your report/suggestion is as much detailed as possible.**
-
-## License 📜
+## License
 
 [![License](https://img.shields.io/github/license/new92/netwix?style=for-the-badge)](https://github.com/new92/netwix/blob/main/LICENSE.md)
 
@@ -47,7 +46,7 @@ If you are reporting a bug or making a suggestion please make sure your report/s
 #### Example Movies
 
 ```python
-from netwix import Movies
+from netwix.types import Movies
 
 movie = Movies("81161626")
 print(movie.name) # Output: Red Notice
@@ -79,7 +78,7 @@ print(movie.name) # Output: Red Notice
 #### Example Series
 
 ```python
-from netwix import Series
+from netwix.types import Series
 
 serie = Series("70126228")
 print(serie.name) # Output: The Office
