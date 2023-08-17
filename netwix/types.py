@@ -25,11 +25,14 @@ class Series:
         self.actors = []
         self.creators = []
         self.directors = []
+        self.allData = None
+        self.fetchData()
     
     def fetchData(self):
         response = requests.get(f'https://www.netflix.com/watch/{self.seriesid}')
         soup = BeautifulSoup(response.content, 'html.parser')
-        meta = json.loads((soup.find('script', type='application/ld+json')).string)
+        tag = soup.find('script', type='application/ld+json')
+        meta = json.loads(tag.string)
         self.type = meta['@type']
         if self.type != 'TVSeries':
             raise NetwixValidationError
@@ -45,10 +48,11 @@ class Series:
         self.creators = [meta['creator'][i]['name'] for i in range(len(meta['creator']))]
         if meta['director'] != []:
             self.directors = [meta['director'][i]['name'] for i in range(len(meta['director']))]
-        if meta['awards']:
+        if 'awards' in meta:
             self.awards = meta['awards']
-        if meta['numberOfSeasons']:
+        if 'numberOfSeasons' in meta:
             self.seasons = meta['numberOfSeasons']
+        self.allData = meta
 
 class Movies:
     def __init__(self, movieid: int):
@@ -67,11 +71,14 @@ class Movies:
         self.creators = []
         self.directors = []
         self.trailer = []
+        self.allData = None
+        self.fetchData()
 
     def fetchData(self):
         response = requests.get(f'https://www.netflix.com/watch/{self.movieid}')
         soup = BeautifulSoup(response.content, 'html.parser')
-        meta = json.loads((soup.find('script', type='application/ld+json')).string)
+        metaTag = soup.find('script', type='application/ld+json')
+        meta = json.loads(metaTag.string)
         self.type = meta['@type']
         if self.type != 'Movie':
             raise NetwixValidationError
@@ -81,14 +88,15 @@ class Movies:
         self.genre = meta['genre']
         self.imgUrl = meta['image']
         self.creationDate = meta['dateCreated']
-        self.actors = [meta['actor'][i]['name'] for i in range(len(meta['actor']))]
+        self.actors = [meta['actors'][i]['name'] for i in range(len(meta['actors']))]
         if meta['creator'] != []:
             self.creators = [meta['creator'][i]['name'] for i in range(len(meta['creator']))]
         if meta['director'] != []:
             self.directors = [meta['director'][i]['name'] for i in range(len(meta['director']))]
-        if meta['trailer']:
+        if 'trailer' in meta:
             self.trailer = [meta['trailer'][i]['contentUrl'] for i in range(len(meta['trailer']))]
         if 'awards' in meta:
             self.awards = meta['awards']
         if 'startDate' in meta:
             self.startDate = meta['startDate']
+        self.allData = meta
