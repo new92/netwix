@@ -30,7 +30,9 @@ If you have any feedback, please reach out to us at <a href="mailto:new92github@
 
 **Feel free to contact us anytime ! You'll get a reply within a day. Please avoid using abusive or offensive language.
 If you are reporting a bug or making a suggestion please make sure your report/suggestion is as much detailed as possible.**
-## License
+
+
+## License 📜
 
 [![License](https://img.shields.io/github/license/new92/netwix?style=for-the-badge)](https://github.com/new92/netwix/blob/main/LICENSE.md)
 
