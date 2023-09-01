@@ -41,9 +41,9 @@ If you are reporting a bug or making a suggestion please make sure your report/s
 
 ### Example Movie ID
 
-- **Movie: **Red Notice
-- **URL: **`https://www.netflix.com/watch/81161626`
-- **Movie ID: **`81161626`
+- **Movie:** Red Notice
+- **URL:** `https://www.netflix.com/watch/81161626`
+- **Movie ID:** `81161626`
 
 #### Example Movies
 
