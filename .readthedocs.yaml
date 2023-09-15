@@ -1,7 +1,14 @@
-version = 2
+version: 2
 
 formats:
   - all
+
+project:
+  name: netwix
+  language: python
+
+build:
+  image: latest
 
 python:
   install:
