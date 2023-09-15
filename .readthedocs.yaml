@@ -1,7 +1,9 @@
 version: 2
 
 formats:
-  - all
+  - htmlzip
+  - pdf
+  - epub
 
 project:
   name: netwix
