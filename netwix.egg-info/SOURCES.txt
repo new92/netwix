@@ -10,4 +10,4 @@ netwix.egg-info/dependency_links.txt
 netwix.egg-info/requires.txt
 netwix.egg-info/top_level.txt
 tests/__init__.py
-tests/netwixTest.py
+tests/test.py
