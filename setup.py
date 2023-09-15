@@ -5,7 +5,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
 
 setup(
     name='netwix',
-    version='0.1.5',
+    version='0.1.6',
     license='MIT',
     description='Netwix is a python client for Netflix. With netwix by simply entering the Netflix ID the user can access data related to movies and tv shows available on Netflix',
     long_description=long_description,
