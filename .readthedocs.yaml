@@ -13,7 +13,6 @@ build:
   image: latest
 
 python:
-  version: 3.8
   install:
     - path: docs/requirements.txt
     - method: pip
