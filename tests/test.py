@@ -2,7 +2,7 @@ from netwix.__init__ import __version__
 from netwix.types import Movies, Series
 
 def testVers():
-    assert __version__ == '0.1.5'
+    assert __version__ == '0.1.6'
 
 def testMovies():
     movie = Movies("81161626")
