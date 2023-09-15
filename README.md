@@ -73,9 +73,9 @@ print(movie.name) # Output: Red Notice
 
 ### Example Series ID
 
-- **Serie: **The Office
-- **URL: **`https://www.netflix.com/watch/70126228`
-- **Series ID: **`70126228`
+- **Serie:** The Office
+- **URL:** `https://www.netflix.com/watch/70126228`
+- **Series ID:** `70126228`
 
 #### Example Series
 
