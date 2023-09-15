@@ -54,6 +54,14 @@ movie = Movies("81161626")
 print(movie.name) # Output: Red Notice
 ```
 
+#### Example Movies
+
+```python
+from netwix.types import Movies
+
+movie = Movies("81161626")
+print(movie.allData) # Output: A dictionary with all the data of the specific movie
+
 #### Movies Attributes
 
 - `type`
