@@ -15,6 +15,5 @@ build:
 python:
   version: 3.8
   install:
-    - requirements:
-      - "requests"
+    - path: docs/requirements.txt
     - method: pip
