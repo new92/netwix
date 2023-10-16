@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+netwix/__init__.py
+netwix/exceptions.py
+netwix/types.py
+netwix.egg-info/PKG-INFO
+netwix.egg-info/SOURCES.txt
+netwix.egg-info/dependency_links.txt
+netwix.egg-info/requires.txt
+netwix.egg-info/top_level.txt
+tests/__init__.py
+tests/test.py

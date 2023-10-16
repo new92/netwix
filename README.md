@@ -30,7 +30,9 @@ If you have any feedback, please reach out to us at <a href="mailto:new92github@
 
 **Feel free to contact us anytime ! You'll get a reply within a day. Please avoid using abusive or offensive language.
 If you are reporting a bug or making a suggestion please make sure your report/suggestion is as much detailed as possible.**
-## License
+
+
+## License 📜
 
 [![License](https://img.shields.io/github/license/new92/netwix?style=for-the-badge)](https://github.com/new92/netwix/blob/main/LICENSE.md)
 
@@ -39,9 +41,9 @@ If you are reporting a bug or making a suggestion please make sure your report/s
 
 ### Example Movie ID
 
-- **Movie: **Red Notice
-- **URL: **`https://www.netflix.com/watch/81161626`
-- **Movie ID: **`81161626`
+- **Movie:** Red Notice
+- **URL:** `https://www.netflix.com/watch/81161626`
+- **Movie ID:** `81161626`
 
 #### Example Movies
 
@@ -50,6 +52,15 @@ from netwix.types import Movies
 
 movie = Movies("81161626")
 print(movie.name) # Output: Red Notice
+```
+
+#### Example Movies
+
+```python
+from netwix.types import Movies
+
+movie = Movies("81161626")
+print(movie.allData) # Output: A dictionary with all the data of the specific movie
 ```
 
 #### Movies Attributes
@@ -71,9 +82,9 @@ print(movie.name) # Output: Red Notice
 
 ### Example Series ID
 
-- **Serie: **The Office
-- **URL: **`https://www.netflix.com/watch/70126228`
-- **Series ID: **`70126228`
+- **Serie:** The Office
+- **URL:** `https://www.netflix.com/watch/70126228`
+- **Series ID:** `70126228`
 
 #### Example Series
 
