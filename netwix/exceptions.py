@@ -1,2 +1,3 @@
 class NetwixValidationError(Exception):
     pass
+    
